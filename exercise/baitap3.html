@@ -5,8 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Market Research Survey</title>
+    <style>
+        table , th {
+           
+            text-align: left;
+            padding: 5px;
+            
+        }
+        table ,td ,th {
+            border-collapse: collapse;
+            padding: 10px;
+            font-size: 15px;
+            border: 1px solid black;
+        }
+        
+            tr:nth-child(odd){ background-color: rgba(218, 213, 213, 0.76);
+
+            }
+        
+    </style>
 </head>
-<br>
+<body>
     <h1>Market Research Survey</h1>
     <p>Please take a few moments to complete this satisfaction survey.</p>
     <p><b>What is your age range?</b></p>
@@ -60,6 +79,44 @@
         <input type="radio" name="gender" value="Monthly" />Monthly
     </div>
     <p><b>What would you pay for the new product?</b></p>
-     <p>$ <input type="text" name="Dollars" id="Dollars"> <b>.</b> <input type="text" name="Cents" ></p>
+     $ <textarea name="Dollars" id="Dollars" cols="10" rows="1" style="resize:none ;"></textarea> <b>.</b> <textarea name="cents" id="cents" cols="1" rows="1" style="resize: none;"></textarea> 
+     <p><b>What features would you like to see in the new product.</b></p>
+     <textarea name="features" id="features" cols="100" rows="10" style="resize: none;"></textarea>
+     <p>Please rate your level of agreement with the following statements.</p>
+     <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th><h5>Strongly Disagree </h5></th>
+                <th><h5> Disagree</h5></th>
+                <th><h5> Agree </h5></th>
+                <th><h5>Strongly Agree </h5></th>
+            </tr>
+            <tr>
+                <th>Our products are priced fairly.</th>
+                <th><input type="radio" name="1" id="1">1</th>
+                <th><input type="radio" name="2" id="2">2</th>
+                <th><input type="radio" name="3" id="3">3</th>
+                <th><input type="radio" name="4" id="4">4</th>
+            </tr>
+            <tr>
+                <th>Our products are high quality.</th>
+                <th><input type="radio" name="1" id="1">1</th>
+                <th><input type="radio" name="2" id="2">2</th>
+                <th><input type="radio" name="3" id="3">3</th>
+                <th><input type="radio" name="4" id="4">4</th>
+            </tr>
+            <tr>
+                <th>Yoou would recommend our product to a friend or coworker.</th>
+                <th><input type="radio" name="1" id="1">1</th>
+                <th><input type="radio" name="2" id="2">2</th>
+                <th><input type="radio" name="3" id="3">3</th>
+                <th><input type="radio" name="4" id="4">4</th>
+            </tr>
+        </thead>
+     </table>
+     <div>
+     <input type="submit" value="submit">
+    </div>
 </body>
 </html>
