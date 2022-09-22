@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td><label>Cạnh a :</label>
+                    <input type="number" id="A"></td>
+            </tr>
+            <tr>
+                <td><label>Cạnh b :</label>
+                    <input type="number" id="B"></td>
+            </tr>
+            <tr>
+                <td><label>Cạnh c :</label>
+                    <input type="number" id="C"></td>
+            </tr>
+            <tr>
+                <td><p id="Result"></p></td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="check()">Kiểm tra</button>
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        function check(){
+            let a = document.getElementById('A').value;
+            let b = document.getElementById('B').value;
+            let c = document.getElementById('C').value;
+            let Result="";
+            if(a ,b , c != 0 && a + b > c && b + c > a && a + c > b){
+                Result = "Result : Là cạnh của tam giác cân"
+            }else{
+                Result = "Result : không phải là cạnh của tam giác cân"
+            }
+            document.getElementById("Result").innerHTML = Result;
+
+        }
+    </script>
+</body>
+</html>
