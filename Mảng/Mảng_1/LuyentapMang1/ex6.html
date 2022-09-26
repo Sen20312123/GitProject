@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let size = Number(prompt('enter size'));
+        let num = new Array(size);
+            let min = 1;
+            let max = 20;
+            for(let i = 0; i < size; i++){
+                num[i] = Math.floor(Math.random() * (max - min + 1) + min);
+            }
+            document.write(`Mảng khởi tạo array = [${num}]`);
+         let count = 0;
+            let V = prompt('Nhập phần tử số nguyên V để kiểm tra!');
+            for( let i = 0; i < num.length; i ++){
+                if(num[i] == V){
+                    count ++;                
+                }
+            }if( count !== 0){
+                    document.write(`<br> ${V} is in the array`);
+            }else{
+                    document.write(`<br> ${V} is not in the array`);
+            }
+    </script>
+</body>
+</html>
