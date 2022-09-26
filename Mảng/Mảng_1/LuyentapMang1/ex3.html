@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let size = Number(prompt('enter size'));
+        let num = new Array(size);
+        let min = 1;
+        let max = 20;
+        for (let i = 0; i < size; i++) {
+            num[i] = Math.floor(Math.random() * (max - min + 1) + min);
+        }
+        document.write(`Mảng khởi tạo array = [${num}]`);
+        let valuemax = 0;
+        let average = 0;
+        for (let i = 0; i < num.length; i++) {
+            average += num[i];
+
+            if (num[i] > valuemax) {
+                valuemax = num[i];
+                index = i;
+            }
+        }
+        document.write(`<br> Phần tử có giá trị lớn nhất là: ${valuemax}, giá trị trung bình là: ${average / size}`);
+    </script>
+</body>
+
+</html>
