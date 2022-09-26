@@ -1,0 +1,110 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td><label>Nhập từ :</label>
+                    <input type="text" id="tu_van">
+                    <button onclick="check()">Dịch</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="result"></p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        function check() {
+            // let English = ["Apple", "Banana", "Orange"]
+            // let Vietnamses = ["Táo", "Chuối", "Cam"]
+            // let string = document.getElementById("tu_van").value;
+            // let index_eng = 0;
+            // let result = "";
+            // for (let i = 0; i < English.length; i++) {
+            //     if (string == English[i]) {
+            //         index_eng = i;
+            //         for (let j = 0; j < Vietnamses.length; j++) {
+            //             if (index_eng == j) {
+            //                 result = "Result :" + Vietnamses[j];
+            //             }
+            //         }
+            //     }
+            //     // else {
+            //     //     result = "Result : không tìm thấy";
+            //     // }
+            // }
+            // let index_vn = 0;
+            // for (let i = 0; i < Vietnamses.length; i++) {
+            //     if (string == Vietnamses[i]) {
+            //         index_vn = i;
+            //         for (let j = 0; j < English.length; j++) {
+            //             if (index_vn == j) {
+            //                 result = "Result :" + English[j];
+            //             }
+            //         }
+            //     }
+                
+            //     document.getElementById("result").innerHTML = result;
+                
+            // }if(!result)  "Result : không tìm thấy";
+            const obj = [
+                {
+                    vn : 'táo',
+                    en : 'apple',
+                },
+                {
+                    vn : 'chuối',
+                    en : 'banana',
+                },
+                {
+                    vn : 'cam',
+                    en : 'orange',
+                },
+            ]
+            let value = 'apple'
+            let result;
+            for( let i = 0 ; i < obj.length ; i++){
+                if(obj[i].en.toUpperCase() === value.toUpperCase()){
+                    result = obj[i].vn;
+                }
+            }
+            if(!result){
+                result = 'không tìm thấy' ;
+            } console.log ( result)
+            // document.getElementById("result").innerHTML = result;
+        }
+    </script>
+
+</body>
+
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="string">Nhập từ: </label>
+    <input type="text" name="" id="string">
+    <button onclick="transcript()">Dịch</button>
+    <p id="result"></p>
+    <script src="tu_dien.js"></script>
+</body>
+</html>
+
