@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <form name="f">
+    <form name="s">
     <textarea name="txt" id="txt" cols="30" rows="10" onkeydown="typeTextarea();"></textarea>
 </form>
 </body>
@@ -17,18 +17,18 @@
     var a = new Array(), n = "";
     a[1] = 'S'; a[2] = 'E'; a[3] = 'N'; a[4] = ' '; a[5] = 'L'; a[6] = 'À'; a[7] = ' '; a[8] = 'M'; a[9] = 'Ộ'; a[10] = 'T'; a[11] = ' '; a[12] = 'N'; a[13] = 'G'; a[14] = 'Ư'; a[15] ='Ờ'; a[16] = 'I'; a[17] = ' '; a[18] ='Đ'; a[19] ='Á'; a[20] = 'N'; a[21] = 'G'; a[22] =' '; a[23] = 'Y'; a[24] = 'Ê'; a[25] = 'U'; a[26] = '!';
     function typeTextarea() {
-        t = document.f.txt.value;
+        t = document.s.txt.value;
         j = t.length;
         if (j > 0) {
             for (var i = 1; i <= j; i++) {
                 n = n + a[i];
                 if (i == 27) {
-                    document.f.txt.value = "";
+                    document.s.txt.value = "";
                     n = "";
                 }
             }
         }
-        document.f.txt.value = n;
+        document.s.txt.value = n;
         n = "";
         setTimeout("typeTextarea()", 1);
 
